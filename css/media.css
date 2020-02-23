@@ -22,4 +22,12 @@
     .bg {
         background: url(../img/bg-8.svg) no-repeat center;
     }
+    .second-nav{
+        height: 4.5rem;
+    }
+
+    .second-nav .cutom-nav-link{
+        background-color: #61baff!important;
+        margin-bottom: 0.33rem;
+    }
 }
