@@ -1,29 +1,24 @@
+/* general */
 @font-face {
     font-family: "Almarai";
     src: url("fonts/Almarai/Almarai-Bold.ttf");
     src: url("fonts/Almarai/Almarai-ExtraBold.ttf");
     src: url("fonts/Almarai/Almarai-Regular.ttf");
 }
+
 body {
     direction: rtl;
     font-family: "Almarai";
     margin: 0;
 }
-.centered{
+
+.centered {
     position: absolute;
     top: 50%;
     left: 0%;
     right: 0%;
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
-}
-.navbar-light .navbar-toggler {
-
-background: #fff;
-}
-.fas {
-    color: black;
-    font-size: 20px;
 }
 
 svg {
@@ -35,11 +30,13 @@ svg {
 .bg {
     background: url(../img/bg-8.svg) no-repeat bottom left;
     background-size: contain;
-        height: 100vh;
+    height: 100vh;
 }
 
-body {
-    font-family: Almarai;
+/* navbar and nav tabs*/
+.navbar-light .navbar-toggler {
+
+    background: #fff;
 }
 
 /* nav tabs */
@@ -74,7 +71,12 @@ body {
     color: #000;
 }
 
+.nav-item.nav-link,
+.nav-tabs.nav-fill {
+    height: 2.5rem;
+}
 
+/* forms */
 .form-control,
 .custom-select {
     background-color: #ffffff61;
@@ -84,48 +86,47 @@ body {
 ::placeholder {
     color: blue;
 }
+
 select.form-control::-ms-expand {
-display: none;
+    display: none;
 }
+
 /* remove select arrows */
-select,input.textbox-n {
--webkit-appearance: none;
--moz-appearance: none;
-}
-.form-btn button{
-color: #fff;
-border: 2px solid;
-border-radius: 34px;
-padding: 0.3rem 1.5rem;
-}
-.btn:hover{
-color:#fff;
+select,
+input.textbox-n {
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-.nav-item.nav-link,.nav-tabs.nav-fill{
-height: 2.5rem;
+.form-btn button {
+    color: #fff;
+    border: 2px solid;
+    border-radius: 34px;
+    padding: 0.3rem 1.5rem;
 }
 
+.btn:hover {
+    color: #fff;
+}
 
-#overlay{
+input.form-control.custom-input::placeholder {
+    color: #fff;
+}
+
+.custom-input {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+/* overlay */
+#overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     background: #000000b5;
-z-index: 999;
+    z-index: 999;
 }
-.title{
-    color:white;
-}
-.animation-div{
-    position: relative;
-width: 100%;
-height: 9rem;
-}
-input.form-control.custom-input::placeholder {
-color: #fff;
-}
-.custom-input{
-background: transparent;
-border: 2px solid #fff;
+
+.title {
+    color: white;
 }
