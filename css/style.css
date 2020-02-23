@@ -9,7 +9,14 @@ body {
     font-family: "Almarai";
     margin: 0;
 }
-
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
 .navbar-light .navbar-toggler {
 
 background: #fff;
@@ -97,4 +104,28 @@ color:#fff;
 
 .nav-item.nav-link,.nav-tabs.nav-fill{
 height: 2.5rem;
+}
+
+
+#overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000000b5;
+z-index: 999;
+}
+.title{
+    color:white;
+}
+.animation-div{
+    position: relative;
+width: 100%;
+height: 9rem;
+}
+input.form-control.custom-input::placeholder {
+color: #fff;
+}
+.custom-input{
+background: transparent;
+border: 2px solid #fff;
 }
