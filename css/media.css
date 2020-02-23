@@ -30,4 +30,7 @@
         background-color: #61baff!important;
         margin-bottom: 0.33rem;
     }
+    .second-nav .cutom-nav-link.active{
+        background-color: #ffcf00!important;
+    }
 }
